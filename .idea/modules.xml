@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WSO2_CIBA_Proxy_Extension.iml" filepath="$PROJECT_DIR$/WSO2_CIBA_Proxy_Extension.iml" />
-      <module fileurl="file://$PROJECT_DIR$/org.wso2.carbon.identity.proxy.ciba.iml" filepath="$PROJECT_DIR$/org.wso2.carbon.identity.proxy.ciba.iml" />
     </modules>
   </component>
 </project>

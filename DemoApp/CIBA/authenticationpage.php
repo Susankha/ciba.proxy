@@ -48,6 +48,7 @@ var auth_reponse;
 var token_request;
 var token_response;
 var user;
+var myhost = "192.168.8.100";
 
 function base64url(source) {
   // Encode in classical base64
@@ -108,7 +109,7 @@ signature = base64url(signature);
 
   request = encodedHeader+"."+encodedData+"."+signature ;
 
-	xmlhttp.open("POST", "http://localhost:8080/CIBAEndPoint?request="+request);
+	xmlhttp.open("POST", "http://"+myhost+":8080/CIBAEndPoint?request="+request);
 	
 document.getElementById("CIBAauthRequest").innerHTML=("Authentication Request sent. "+" <br />" + " <br />" +"Authentication Request : "+"http://localhost:8080/CIBAEndPoint?request="+request);
 
@@ -143,7 +144,7 @@ console.log("Authentication Request Sent");
 };
     
 	function tokenRequest(auth_req_id){
-token_request = " http://localhost:8080/TokenEndPoint?auth_req_id="+auth_req_id+"&grant_type=urn:openid:params:grant-type:ciba" ;
+token_request = " http://"+myhost+":8080/TokenEndPoint?auth_req_id="+auth_req_id+"&grant_type=urn:openid:params:grant-type:ciba" ;
 		document.getElementById("polling_status").innerHTML=("");
 		document.getElementById("tokenRequest").innerHTML=("");
 		document.getElementById("tokenResponse").innerHTML=("");
@@ -155,7 +156,7 @@ token_request = " http://localhost:8080/TokenEndPoint?auth_req_id="+auth_req_id+
 		var data1=null
 		
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("POST", "http://localhost:8080/TokenEndPoint?auth_req_id="+auth_req_id+"&grant_type=urn:openid:params:grant-type:ciba", true);
+		xmlhttp.open("POST", "http://"+myhost+":8080/TokenEndPoint?auth_req_id="+auth_req_id+"&grant_type=urn:openid:params:grant-type:ciba", true);
 		xmlhttp.onreadystatechange = function() {
         		if (this.readyState == 4 && this.status == 200) {
 			console.log(this.responseText)
@@ -168,7 +169,7 @@ token_request = " http://localhost:8080/TokenEndPoint?auth_req_id="+auth_req_id+
 				console.log("Token received");
 				document.getElementById("tokenResponse").innerHTML=("Token Response recieved."+" <br />" + " <br />" +"Token Response : " +response);
 				token_response = response;
-                               window.location.replace("http://localhost/CIBA/resultpage.php?CIBAauthRequest="+request+"&CIBAauthResponse="+auth_reponse+"&tokenRequest="+token_request+"&tokenResponse="+token_response+"&user="+user);
+                               window.location.replace("http://"+myhost+"/CIBA/resultpage.php?CIBAauthRequest="+request+"&CIBAauthResponse="+auth_reponse+"&tokenRequest="+token_request+"&tokenResponse="+token_response+"&user="+user);
 
 			}else{
 				document.getElementById("tokenResponse").innerHTML=("Pending Authentication . . .");
