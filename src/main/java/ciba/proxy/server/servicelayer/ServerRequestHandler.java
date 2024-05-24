@@ -111,6 +111,7 @@ public class ServerRequestHandler implements Handlers {
     private void initiateRequest(CIBAauthRequest cibAauthRequest, String identifier) {
 
         System.out.println("Initiating server auth2 code grant");
+        LOGGER.info("======  Initiating server auth2 code grant  =========");
         //Start sending request to IS server and listen upon.
 
         try {

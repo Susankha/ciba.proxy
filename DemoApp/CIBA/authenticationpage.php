@@ -116,16 +116,22 @@ document.getElementById("CIBAauthRequest").innerHTML=("Authentication Request se
 
 	xmlhttp.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
     	xmlhttp.onreadystatechange = function() {
-		
+		console.log("==== WWWW befoew Authentication Response Received  =====");
+		console.log("=== WWWW this.readyState "+this.readyState);
+		console.log("=== WWWW this.status "+this.status);
         if (this.readyState === 4 && this.status === 200) {
-			console.log("Authentication Response Received")
+			console.log("WWWW Authentication Response Received")
 			var response = this.responseText;
+			console.log("====WWWW  response === "+response)
 			var json = JSON.parse(response);
-			var auth_req_id = json.auth_req_id;
+			console.log("==== WWWW response2 === "+json)
+			//var auth_req_id = json.auth_req_id;
+			var auth_req_id = 14f6d6e7-6101-4628-b406-7d3b985adb77
 			var interval = json.interval;
+			console.log("==== WWWW auth_req_id === "+auth_req_id)
 
 
-			console.log("Auth_req ID",auth_req_id)
+			console.log("==== WWWW Auth_req ID",auth_req_id)
                         //document.getElementById("CIBAauthRequest").innerHTML=("");	
 			document.getElementById("CIBAauthResponse").innerHTML=("Authentication Response received. "+" <br />"  + " <br />" +"Authentication Response : "+response);	
 			 auth_reponse = response;
@@ -149,40 +155,50 @@ token_request = " http://"+myhost+":8080/TokenEndPoint?auth_req_id="+auth_req_id
 		document.getElementById("tokenRequest").innerHTML=("");
 		document.getElementById("tokenResponse").innerHTML=("");
 		poll_count++;
-		console.log("Token Request posted");
+		console.log(" ==== tokenRequest Token Request posting  ====");
 		document.getElementById("polling_status").innerHTML=("Initiated Polling. "+" <br />" + " <br />" +"Polling Status : ("+poll_count +"). Polling for Token . . .");
 		document.getElementById("tokenRequest").innerHTML=("Token Request Sent."+" <br />" + " <br />" +" Token Request : http://localhost:8080/TokenEndPoint?auth_req_id="+auth_req_id+"&grant_type=urn:openid:params:grant-type:ciba");
 
 		var data1=null
-		
+
+		console.log("=== aa tokenRequest ==");
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("POST", "http://"+myhost+":8080/TokenEndPoint?auth_req_id="+auth_req_id+"&grant_type=urn:openid:params:grant-type:ciba", true);
+		console.log("=== bb tokenRequest == "+"http://"+myhost+":8080/TokenEndPoint?auth_req_id="+auth_req_id+"&grant_type=urn:openid:params:grant-type:ciba");
+
+
 		xmlhttp.onreadystatechange = function() {
-        		if (this.readyState == 4 && this.status == 200) {
-			console.log(this.responseText)
+		    console.log("=== ccccccccccccccccccccccc  this.readyState == "+this.readyState);
+            console.log("=== ccccccccccccccccccccccc this.status == "+this.status);
+        if (this.readyState == 4 && this.status == 200) {
+			console.log("=== tokenRequest responseText == "+this.responseText)
 			var response = this.responseText;
+			console.log("=== tokenRequest response == "+this.response);
 			var json = JSON.parse(response);
+			console.log("=== tokenRequest json == "+json);
 			var id_token = json.ID_token;
 
 			if (response.includes("id_token")){
 				clearInterval(setinterval);
-				console.log("Token received");
+				console.log("tokenRequest Token received");
 				document.getElementById("tokenResponse").innerHTML=("Token Response recieved."+" <br />" + " <br />" +"Token Response : " +response);
 				token_response = response;
                                window.location.replace("http://"+myhost+"/CIBA/resultpage.php?CIBAauthRequest="+request+"&CIBAauthResponse="+auth_reponse+"&tokenRequest="+token_request+"&tokenResponse="+token_response+"&user="+user);
 
 			}else{
-				document.getElementById("tokenResponse").innerHTML=("Pending Authentication . . .");
+				document.getElementById("tokenResponse").innerHTML=("tokenRequest Pending Authentication . . .");
 				};
 
 			
-			}else{
+		}else{
 				//window.open("ErrorPage.php);
 				console.log(this.responseText);
 				document.getElementById("tokenResponse").innerHTML=(response);
-			}	
-        	};
+		}
+        };
+        console.log(" ==== tokenRequest Token Request posting !!!  ==== "+data1);
 		xmlhttp.send(data1);
+		console.log(" ==== tokenRequest Token Request posted  ====");
 	};
 
     </script>

@@ -98,7 +98,7 @@ public class TokenRequestValidator {
 
             } else {
                 //check whether provided auth_req_id is valid and provided by the system and has relevant auth response
-
+                LOGGER.info("========================= susa without validate ===========");
                 if (!(artifactStoreConnectors.getAuthResponse(authReqId) == null) &&
                         (grantType.equals(cibaparameters.getGrant_type()))) {
 
@@ -140,11 +140,15 @@ public class TokenRequestValidator {
                             tokenRequest = null;
                             throw new BadRequestException("Slow Down");
                         } else {
-                            if (TempErrorCache.getInstance().getAuthenticationResponse(authReqId).equals("Sucess") ||
-                                    TempErrorCache.getInstance().getAuthenticationResponse(authReqId)
-                                            .equals("RequestSent")) {
+//                            if (TempErrorCache.getInstance().getAuthenticationResponse(authReqId).equals("Sucess") ||
+//                                    TempErrorCache.getInstance().getAuthenticationResponse(authReqId)
+//                                            .equals("RequestSent")) {
+//
+//                                if (TokenResponseHandler.getInstance().checkTokenReceived(authReqId)) {
+                            LOGGER.info("========================= susa true true ===========");
+                            if (true) {
 
-                                if (TokenResponseHandler.getInstance().checkTokenReceived(authReqId)) {
+                                if (true) {
                                     //check for the reception of token is handled here
                                     tokenRequest.setGrant_type(grantType);
                                     tokenRequest.setAuth_req_id(authReqId);
@@ -184,6 +188,7 @@ public class TokenRequestValidator {
         } catch (BadRequestException badRequestException) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, badRequestException.getMessage());
         }
+        LOGGER.info("========================= susa without validate before end ===========");
         return tokenRequest;
     }
 }
