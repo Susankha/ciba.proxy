@@ -6,18 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c459f55-7a82-4271-b505-fd850786f507" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DemoApp/CIBA/authenticationpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/DemoApp/CIBA/authenticationpage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/authorizationserver/ServerInstantiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authorizationserver/ServerInstantiation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciba/proxy/server/servicelayer/ServerRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciba/proxy/server/servicelayer/ServerRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/handlers/TokenResponseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handlers/TokenResponseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validator/TokenRequestValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validator/TokenRequestValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CIBA_Proxy_Extension-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CIBA_Proxy_Extension-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CIBA_Proxy_Extension-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/CIBA_Proxy_Extension-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/authorizationserver/ServerInstantiation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/authorizationserver/ServerInstantiation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ciba/proxy/server/servicelayer/ServerRequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciba/proxy/server/servicelayer/ServerRequestHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/handlers/TokenResponseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handlers/TokenResponseHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/validator/TokenRequestValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validator/TokenRequestValidator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,17 +23,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ServerInstantiation.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "ciba",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/susankha/softwares/wso2/tmp/testis/repo/org.wso2.carbon.identity.application.authentication.handler.ciba",
-    "settings.editor.selected.configurable": "preferences.customizations"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ServerInstantiation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ciba&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/susankha/softwares/wso2/tmp/testis/repo/org.wso2.carbon.identity.application.authentication.handler.ciba&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
