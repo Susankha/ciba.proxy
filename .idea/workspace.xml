@@ -6,6 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="2c459f55-7a82-4271-b505-fd850786f507" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoApp/CIBA/authenticationpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/DemoApp/CIBA/authenticationpage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configuration/ConfigHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configuration/ConfigHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CIBA_Proxy_Extension-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CIBA_Proxy_Extension-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CIBA_Proxy_Extension-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/CIBA_Proxy_Extension-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CIBA.postman_collection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/configuration/ConfigHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration/ConfigHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org.wso2.carbon.extension.identity.authenticator.emailotp.connector-2.0.29-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org.wso2.carbon.identity.application.authentication.handler.ciba-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +41,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;ciba&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/susankha/softwares/wso2/tmp/testis/repo/org.wso2.carbon.identity.application.authentication.handler.ciba&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/susankha/softwares/wso2/tmp/testis/repo/carbon-identity-framework/components/authentication-framework&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
   }
 }</component>
@@ -44,6 +55,17 @@
       <updated>1716347182872</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

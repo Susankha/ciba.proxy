@@ -125,8 +125,8 @@ document.getElementById("CIBAauthRequest").innerHTML=("Authentication Request se
 			console.log("====WWWW  response === "+response)
 			var json = JSON.parse(response);
 			console.log("==== WWWW response2 === "+json)
-			//var auth_req_id = json.auth_req_id;
-			var auth_req_id = 14f6d6e7-6101-4628-b406-7d3b985adb77
+			var auth_req_id = json.auth_req_id;
+			//var auth_req_id = "14f6d6e7-6101-4628-b406-7d3b985adb77";
 			var interval = json.interval;
 			console.log("==== WWWW auth_req_id === "+auth_req_id)
 

@@ -2,9 +2,9 @@
 #config_file
 appName: sp1
 clientId: 6fJ46TOQYv0eENfe1O0mikgW8gsa
-clientSecret: f1vHL7KONcFkjpadujRT8IcAlwga
+clientSecret: glO9_tqgXIjdYN0okp9oCCydRega
 storeConnectorType: JDBC
-database: ArtifactStore2
+database: ArtifactStore5
 dbUserName: root
 flowMode: poll
 clientNotificationEndpoint: http://localhost/Sp2/clientNotificationEnd

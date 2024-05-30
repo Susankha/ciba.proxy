@@ -96,8 +96,16 @@
         <java.version>1.8</java.version>
     </properties>
 
-
     <build>
+        <resources>
+            <resource>
+                <filtering>false</filtering>
+                <directory>${project.basedir}/src/resources</directory>
+                <includes>
+                    <include>config.yaml</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
